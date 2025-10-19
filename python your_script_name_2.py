@@ -5,14 +5,14 @@ import json
 
 # --- CẤU HÌNH ---
 # Thay thế bằng Bot Token và Channel ID của bạn
-token = "OTk1MjI3NzY3MTc4MjcyODc5.GtOZbQ.UJ0SBTzE5CxZOAqgScSsZxcPqRR6GXpYlKhNSA"  # DÁN TOKEN CỦA BẠN VÀO ĐÂY
+token = "OTk1MjI3NzY3MTc4MjcyODc5.GBnFqf.igeJl8idY5jn0sSXRGMzWCyfD9BTYbaAu5K2AQ"  # DÁN TOKEN CỦA BẠN VÀO ĐÂY
 CHANNEL_ID = "1429570178017923183" # DÁN CHANNEL ID BẠN MUỐN GỬI TIN NHẮN
 TASK_FILE = "tasks.xlsx"
 # --- KẾT THÚC CẤU HÌNH ---
 
 def send_discord_message(message):
     """Hàm gửi tin nhắn tới kênh Discord bằng Token."""
-    url = "https://discord.com/api/v9/channels/1429570178017923183/messages"
+    url = "https://discord.com/api/v9/science"
     
     # Header cho user token (KHÔNG có "Bot ")
     headers = {
@@ -95,4 +95,5 @@ if index < len(df):
             else:
                 st.error(f"Gửi thất bại: {message}")
 else:
+
     st.warning("Đã hết task trong file Excel!")
